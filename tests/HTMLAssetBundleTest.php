@@ -46,14 +46,6 @@ EOF;
 
         $this->assertEquals($expected, $view->renderFile('@yiiunit/extensions/polymer/views/rawlayout.php'));
     }
-
-    public function testNav()
-    {
-        $view = $this->getView();
-        NavBarAsset::register($view);
-
-        var_dump($view->renderFile('@yiiunit/extensions/polymer/views/rawlayout.php'));
-    }
 }
 
 class TestSimpleAsset extends HTMLImportAssetBundle
