@@ -1,10 +1,9 @@
 <?php
+
 namespace Navarr\Materialii\Tests;
 
-use Navarr\Materialii\assets\NavBarAsset;
 use Navarr\Materialii\HTMLImportAssetBundle;
 use Yii;
-use yii\web\AssetBundle;
 use yii\web\AssetManager;
 use yii\web\View;
 
@@ -24,7 +23,7 @@ class HTMLAssetBundleTest extends TestCase
         $view = new View();
         $view->setAssetManager(new AssetManager([
             'basePath' => '@testWebRoot/assets',
-            'baseUrl' => '@testWeb/assets'
+            'baseUrl'  => '@testWeb/assets',
         ]));
 
         return $view;
